@@ -7,8 +7,8 @@ Optimal Approach:
 1. Sort the intervals array based on the start value.
 2. Traverse the intervals array [current Interval(start, end) & prevEnd: end value of 
 last added interval in the answer list]
-    -> if start > prevEnd : then add the interval to answer list
-    -> else: merge the current interval into last added interval in answer list
+    (a) if start > prevEnd : then add the interval to answer list
+    (b) else: merge the current interval into last added interval in answer list
      
 Time Complexity -> O(N * LogN) Space Complexity -> O(N) [for answer list] 
 """
